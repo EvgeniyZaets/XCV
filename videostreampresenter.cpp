@@ -1,7 +1,7 @@
 #include "videostreampresenter.h"
 #include "ui_mainwin_xcv.h"
 #include "mattoqt.h"
-#include "../Model/detectedfacemodel.h"
+#include "detectedfacemodel.h"
 
 
 VideoStreamPresenter::VideoStreamPresenter(QObject *parent)

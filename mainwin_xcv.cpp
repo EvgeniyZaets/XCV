@@ -6,7 +6,7 @@
 #include <QPixmap>
 #include <iostream>
 #include <opencv2/opencv.hpp>
-#include "../Model/detectedfacemodel.h"
+#include "detectedfacemodel.h"
 #include "mattoqt.h"
 //#include "equipmentcamerapresenter.h"
 

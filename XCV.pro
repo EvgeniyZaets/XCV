@@ -11,8 +11,8 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    ../Model/detectedfacemodel.cpp \
     aboutbox.cpp \
+    detectedfacemodel.cpp \
     main.cpp \
     mainwin_xcv.cpp \
     mattoqt.cpp \
@@ -31,8 +31,8 @@ LIBS += -L C:/OpenCV/opencv-3.4.15/build64_/install/x64/mingw/lib \
     -lopencv_face3415
 
 HEADERS += \
-    ../Model/detectedfacemodel.h \
     aboutbox.h \
+    detectedfacemodel.h \
     mainwin_xcv.h \
     mattoqt.h \
     videostreampresenter.h
