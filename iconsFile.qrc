@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>icons/icons/icons8-active-directory-80.png</file>
+        <file>icons/icons/icons8-бинокль-80.png</file>
+        <file>icons/icons/icons8-бот-80.png</file>
+        <file>icons/icons/icons8-веб-камера-96.png</file>
+        <file>icons/icons/icons8-внешняя-ссылка-80.png</file>
+        <file>icons/icons/icons8-восстановление-данных-80.png</file>
+        <file>icons/icons/icons8-встроенная-веб-камера-80.png</file>
+        <file>icons/icons/icons8-дерево-папок-80.png</file>
+        <file>icons/icons/icons8-документ-80.png</file>
+        <file>icons/icons/icons8-загрузить-в-облако-80.png</file>
+        <file>icons/icons/icons8-камень-80.png</file>
+        <file>icons/icons/icons8-купольная-камера-80.png</file>
+        <file>icons/icons/icons8-купольная-камера-96.png</file>
+        <file>icons/icons/icons8-обучение-80.png</file>
+        <file>icons/icons/icons8-о-нас-80.png</file>
+        <file>icons/icons/icons8-открыть-папку-80.png</file>
+        <file>icons/icons/icons8-отменить-2-80.png</file>
+        <file>icons/icons/icons8-ошибка-80.png</file>
+        <file>icons/icons/icons8-ошибка-камеры-на-стене-96.png</file>
+        <file>icons/icons/icons8-проверено-80.png</file>
+        <file>icons/icons/icons8-сервисы-80.png</file>
+        <file>icons/icons/icons8-синхронизировать-80.png</file>
+        <file>icons/icons/icons8-сохранить-и-закрыть-80.png</file>
+        <file>icons/icons/icons8-удалить-80.png</file>
+        <file>icons/icons/icons8-удалить-изображение-80.png</file>
+        <file>icons/icons/icons8-файл-изображения-80.png</file>
+        <file>icons/icons/icons8-частная-камера-для-настенного-крепления-96.png</file>
+        <file>icons/icons/icons8-кино-80.png</file>
+        <file>icons/icons/icons8-экспорт-в-csv-80.png</file>
+        <file>icons/icons/icons8-импорт-из-csv-80.png</file>
+        <file>icons/icons/icons8-pdf-2-80.png</file>
+        <file>icons/icons/icons8-удалить-файл-80.png</file>
+        <file>icons/icons/icons8-добавить-файл-80.png</file>
+        <file>icons/icons/icons8-xml-файл-80.png</file>
+    </qresource>
+</RCC>
