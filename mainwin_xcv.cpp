@@ -21,8 +21,10 @@ MainWin_XCV::MainWin_XCV(QWidget *parent)
 
 
     // для потока видео
-    VideoStream = new VideoStreamPresenter; // создаем объект класса
-    timer = new QTimer(this);
+    VideoStream = new VideoStreamPresenter; // создаем объект класса видеопотока
+    timer = new QTimer(this); //создаем таймер
+
+    //соединяем через сигналы и слоты с файлом detectedfacemodel.h
     connect(this,&MainWin_XCV::OpenVideoSignal,VideoStream,&VideoStreamPresenter::OpenVideo);
     connect(timer,&QTimer::timeout,VideoStream,&VideoStreamPresenter::ReadFrame);
     connect(VideoStream,&VideoStreamPresenter::FrameVideo,this,&MainWin_XCV::FrameVideo);
@@ -78,17 +80,10 @@ void MainWin_XCV::on_openFileImg_triggered() // открыть файл - диа
     ui->PanelOriginalImg->setPixmap(QPixmap::fromImage(qtImgIn));//выводим изображение
 }
 
+///////////////////////////////// Запуск диалогового окна -  открыть файл видео ///////////////////////////////////////////
 void MainWin_XCV::on_openFileVideo_triggered()
 {
     string pathVideo = (QFileDialog::getOpenFileName(this, tr("Open Video"), ".", tr("Video File(*.avi *.mp4 *.h264)"))).toStdString();
-
-    QPixmap imagesearch ("C:/Users/mazur/Pictures/Face_naideno.png");
-    imagesearch=imagesearch.scaled(320, 320, Qt::KeepAspectRatio);
-    QPixmap imagebd ("C:/Users/mazur/Pictures/Face_bd.jpg");
-    imagebd=imagebd.scaled(320, 320, Qt::KeepAspectRatio);
-    ui->PanelImgFaceBDid->setPixmap(imagebd);
-    ui->PanelImgFaceSearch->setPixmap(imagesearch);
-
     emit OpenVideoSignal(pathVideo,35, timer);
     emit MainWin_XCV::ReadFrame();
 

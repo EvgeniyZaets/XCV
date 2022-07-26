@@ -8,7 +8,7 @@ VideoStreamPresenter::VideoStreamPresenter(QObject *parent)
     : QObject{parent}
 { }
 
-void VideoStreamPresenter::ReadFrame()
+void VideoStreamPresenter::ReadFrame() // воспроизведение потока и покадровая передача в метод распознования лиц
 {
     if(capture.isOpened())
     {
